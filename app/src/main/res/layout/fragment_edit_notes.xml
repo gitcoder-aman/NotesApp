@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:id="@+id/edtTitle"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/edt_txt_shape"
+            android:textColorHint="#D1D1D1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subtitle"
+            android:id="@+id/edtSubtitle"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/edt_txt_shape"
+            android:textColorHint="#D1D1D1"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/pGreen"
+                android:background="@drawable/green_dot"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/pYellow"
+                android:background="@drawable/yellow_dot"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pRed"
+                android:background="@drawable/red_dot"
+                android:layout_marginStart="20dp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:hint="@string/notes"
+            android:textColor="@color/white"
+            android:id="@+id/edtNotes"
+            android:padding="15dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/edt_txt_shape"
+            android:textColorHint="#D1D1D1"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveNotes"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="26dp"
+        android:src="@drawable/ic_done"
+        android:backgroundTint="@color/red_color"
+        android:contentDescription="@string/todo" />
+
+</FrameLayout>
